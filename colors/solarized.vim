@@ -592,9 +592,6 @@ exe "hi! Ignore"         .s:fmt_none   .s:fg_none   .s:bg_none
 exe "hi! Error"          .s:fmt_bold   .s:fg_red    .s:bg_none
 "       *Error           any erroneous construct
 
-exe "hi! GroupA"          .s:fmt_none   .s:fg_base02 .s:bg_none
-"       *Error           any erroneous construct
-
 exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
 "       *Todo            anything that needs extra attention; mostly the
 "                        keywords TODO FIXME and XXX
@@ -760,6 +757,10 @@ hi! link gitcommitUnmergedArrow  gitcommitUnmergedFile
 "exe "hi! gitcommitOverflow"
 "exe "hi! gitcommitBlank"
 " }}}
+" Taskpaper highlighting "{{{
+" ---------------------------------------------------------------------
+exe "hi! taskpaperIndent"   .s:fmt_none   .s:fg_base02 .s:bg_none
+"}}}
 " html highlighting "{{{
 " ---------------------------------------------------------------------
 exe "hi! htmlTag"           .s:fmt_none .s:fg_base01 .s:bg_none
